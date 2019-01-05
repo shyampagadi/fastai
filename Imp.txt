@@ -1,0 +1,121 @@
+https://www.youtube.com/watch?v=VPg2ZlRPiXI
+deeplearningSF2018 
+
+!pip install kaggle
+import os
+os.environ["KAGGLE_USERNAME"] = 'pagadi'
+os.environ["KAGGLE_KEY"] = 'dc52e9e9a875b9be617123235cc9f352'
+
+https://www.kaggle.com/sudalairajkumar/winning-solutions-of-kaggle-competitions
+
+!curl https://course-v3.fast.ai/setup/colab | bash
+
+
+import urllib2
+import urllib
+import json
+import urlparse
+
+def main():
+    with open("C:\Users\Stern Marketing\Desktop\dumpaday.txt","r") as f:
+        for x in f:
+            urlParts = urlparse.urlsplit(x.strip())
+            filename = urlParts.path.split('/')[-1]
+            urllib.urlretrieve(x.strip(), filename)
+			
+
+import wget
+
+print('Beginning file download with wget module')
+
+url = 'http://i3.ytimg.com/vi/J---aiyznGQ/mqdefault.jpg'  
+wget.download(url, '/Users/scott/Downloads/cat4.jpg')  
+
+Hey Tanmay, save the code to a .py file, extract the json files from the zips, open cmd and navigate to your folder. The run something like this:
+python downloader.py test.json "C:\Users\userName\Downloads\test"	
+
+from google.colab import files
+files.upload()		
+
+https://console.cloud.google.com/storage/browser/pagadishyam
+gs://pagadishyam
+
+df['label'] = df.labelId.astype(str).str.replace('\[|\]|\'', '')
+
+print(len(os.listdir("../input/train")))
+print(len(os.listdir("../input/test")))
+
+https://www.kaggle.com/codename007/a-very-extensive-end-to-end-project-donorschoose
+
+https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/3.5-classifying-movie-reviews.ipynb
+
+import fastai
+fastai.__version__
+[9]: '1.0.24'
+
+https://github.com/ramonhollands/spotting-text
+
+wc -l filename #for number of files
+
+https://github.com/cwerner/guitars-app/blob/master/nbs/Guitar_Classifier.ipynb
+
+https://github.com/NaliniCommits/course-v3/blob/fastai-nb/nbs/dl1/nb-predicthumanemotions-deployingwebapp.ipynb
+
+classes = sorted([x.name for x in (pathlib.Path.cwd()/'data/guitars').iterdir()])
+classes
+
+https://forums.fast.ai/t/duplicate-widget/30975
+
+https://forums.fast.ai/t/bash-scripts-for-creating-sample-datasets/2235/2
+
+gut_path = pathlib.Path("gutenberg/")
+gutenberg_filenames = list(gut_path.glob("*.txt"))
+len(gutenberg_filenames)
+
+https://gist.github.com/andrewreece/9112dc5f893f79d53dc4d219905dd92a ##### has custom fastai model metrics for text data.
+
+https://gist.github.com/ksasi/06c4adab25d03f27f6d9526df551c3c8 --- Images and Bounding Boxes
+
+https://github.com/nikhilno1/healthy-or-not/blob/master/heroku-deploy.md
+
+https://www.youtube.com/watch?v=aWH5AksFoQs
+
+https://medium.com/@johnhartquist/audio-classification-using-fastai-and-on-the-fly-frequency-transforms-4dbe1b540f89
+https://github.com/sevenfx/fastai_audio --- Audio to Image ******
+https://stackoverflow.com/questions/52432731/store-the-spectrogram-as-image-in-python
+
+!7za -y x "*.7z"
+https://github.com/fastai/fastai_docs/blob/master/dev_nb/104c_single_image_pred.ipynb
+
+https://sites.google.com/view/deep-rl-bootcamp/lectures
+https://notebooks.azure.com/pytorch/libraries/tutorials
+https://www.youtube.com/watch?v=ISk80iLhdfU&list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs&index=4
+
+%%timeit
+accuracy(*learn.TTA())
+!kill -9 -1
+
+https://github.com/btahir/leaves-of-ai/blob/master/Whitman-Novel.ipynb
+
+https://github.com/yandexdataschool/Practical_RL
+
+https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
+
+https://github.com/fastai/course-v3.git
+
+https://github.com/fpingham/dataset-cleaner/blob/master/Dataset%20Cleaner.ipynb -- Finding Duplicates in dataset
+
+https://www.youtube.com/watch?v=9shn3Oz7Ptw
+
+https://github.com/ricknta/fake-news/blob/master/fake_news_05.ipynb -- Text Classification
+
+https://github.com/radekosmulski/whale/blob/master/new_whale_detector.ipynb -- For getting tp,tn,fp,fn
+
+https://github.com/martin-merener/deep_learning/tree/master/more_transfer_learning -- TransferLearning - 4 examples
+
+https://github.com/nikhilno1/kaggle/blob/master/kaggle-quora-insincere.ipynb -- Text Model Classification
+
+https://github.com/wy-q/Fbeta_binary/blob/master/Fbeta_binary_text_classification_test-forum.ipynb -- F1 score for binary classification 
+
+https://github.com/ttdoucet/mnist/blob/master/mnist.ipynb ### Best MNIST model, good for referance, Implement
+https://github.com/ttdoucet/mnist ### above git hub repo
